@@ -6,4 +6,6 @@ __pycache__/
 .ruff_cache/
 .idea/
 .vscode/
+node_modules/
+yarn.lock
 .DS_Store
