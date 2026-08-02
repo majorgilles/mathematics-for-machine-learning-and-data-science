@@ -1,0 +1,36 @@
+[project]
+name = "mathematics-for-machine-learning-and-data-science"
+version = "0.1.0"
+description = "Follow-along notebooks for the DeepLearning.AI Mathematics for Machine Learning and Data Science Specialization."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.10",
+    "numpy>=2.3",
+    "pandas>=2.3",
+    "scipy>=1.16",
+    "seaborn>=0.13",
+    "sympy>=1.14",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.0",
+    "jupyterlab>=4.4",
+    "pytest>=9.0",
+    "ruff>=0.14",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP"]
