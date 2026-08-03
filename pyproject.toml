@@ -5,6 +5,7 @@ description = "Follow-along notebooks for the DeepLearning.AI Mathematics for Ma
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "jax>=0.11.0",
     "matplotlib>=3.10",
     "numpy>=2.3",
     "pandas>=2.3",
